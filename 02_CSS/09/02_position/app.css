@@ -1,0 +1,59 @@
+div{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    border: black dotted 2px;
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 1px;
+}
+#middle{
+    position: static;
+    top:10px;
+}
+#middle_r{
+    background-color: blueviolet;
+    position: relative;
+    /* its position will be relative to itself */
+    top:10px;
+    right:10px;
+}
+section:nth-of-type(3){
+    position:relative;
+}
+#middle_a{
+    position: absolute;
+    /* 
+    * This will remove Element from the normal document flow 
+      and no space is created for the element in page layout!!
+      * It's positioned relative to its closest positioned ancestor,if any!!
+      otherwise it is paced reative to the initial containing block!!
+      */
+      background-color: crimson;
+      width:60px;
+      height: 60px;
+      top: 48px;
+      left: 210px;
+    }
+    #middle_f{
+    position: fixed;
+    /*
+    Its just same as absolute   i.e.
+    * This will remove Element from the normal document flow 
+      and no space is created for the element in page layout!!
+    * It's positioned relative to its closest positioned ancestor,if any!!
+      otherwise it is paced reative to the initial containing block established by
+      viewport!!(i.e. from the very beggining od the document!)
+imp *Even if we scroll down it will be there as it is and will be visible to us after
+     scrolling even 1000 lines
+    */
+    top:10px;
+    left: 1px;
+    background-color: aqua
+}
+p{
+    text-align: justify;
+}
+body{
+    margin: 0;
+}

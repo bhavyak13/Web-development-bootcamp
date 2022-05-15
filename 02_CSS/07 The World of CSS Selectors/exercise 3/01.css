@@ -1,0 +1,23 @@
+.square{
+    border:black solid 1px;
+    width: 100px;
+    height: 100px;
+    box-sizing:border-box;
+}
+
+
+/* THIS CODE WILL MAKE SENSE ONCE WE COVER FLEXBOX!  */
+#board {
+    display: flex;
+    margin: 0 auto;
+    width: 500px;
+    flex-wrap: wrap;
+}
+
+/* ans-> */
+.square:nth-child(even){
+    background-color: red;
+}
+.square:nth-child(odd){
+    background-color: black;
+}

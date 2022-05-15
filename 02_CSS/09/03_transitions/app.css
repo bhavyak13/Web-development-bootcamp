@@ -1,0 +1,70 @@
+/* TRANSITION */
+/* Property name | Duration | timing function | delay */
+
+.top{
+    background-color: #000;
+    height: 200px;
+    width: 200px;
+    border:royalblue 5px solid;
+    transition-duration: 1s;
+    transition-property: background-color;
+    transition-duration: 2s;
+    transition-property: border-radius;
+    color: gainsboro;
+    padding: 67px;
+    box-sizing: border-box;
+}
+.top:hover{
+    background-color: chartreuse;
+    border-radius: 50%;
+    font-size:x-large;
+}
+.top:active{
+    background-color: cornflowerblue;
+    border-radius: 50%;
+}
+section div{
+    background-color: crimson;
+    width: 200px;
+    height: 200px;
+    border:darkgoldenrod 5px solid;
+    margin:4px;
+    box-sizing: border-box;
+    text-align: center;
+    padding-top: 80px;
+}
+#one{
+    transition: background-colour 3s ease-in 1s ;
+    transition: margin-left 3s linear;
+}
+#one:hover{
+    background-color:forestgreen;
+    margin-left: 400px;
+}
+
+
+#two{
+    transition: margin-left 3s ease-in;
+}
+#two:hover{
+    background-color: saddlebrown;
+    margin-left: 400px;
+}
+
+
+#three{
+    transition: margin-left 3s ease-out;
+}
+#three:hover{
+    background-color: hotpink;
+    margin-left: 400px;
+}
+
+
+#four{
+    transition: margin-left 3s step-end;
+}
+#four:hover{
+    background-color: olivedrab;
+    margin-left: 400px;
+}

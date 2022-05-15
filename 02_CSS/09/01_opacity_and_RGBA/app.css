@@ -1,0 +1,34 @@
+body{
+    background-color: black;
+    color: #fff;
+}
+
+
+div{
+    font-weight: 600;
+    font-size: x-large;
+}
+
+
+#abc{
+    height: 300px;
+    width: 50%;
+    background-color: palegoldenrod;
+    color: purple;
+    /* opacity: 0.4; */
+}
+
+
+#xyz{
+    background-color: magenta;
+    height: 300px;
+    width: 50%;
+    background-color: rgba(120, 120, 120, 0.5);
+}
+
+/*
+alpha channel effects are applicable only to
+backhtouund colors
+where as
+opacity effects are visible on thw whole element!!
+*/

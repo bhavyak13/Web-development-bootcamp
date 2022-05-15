@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap!!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body class="text-light container">
+    <p>
+        <!-- <h1 class="display-6 text-success">More on <abbr title="Bootstrap">BS</abbr><span> -->
+    <h1 class="display-5">More on Bootstrap<span>
+            <small>
+                <badge class="badge rounded-pill bg-info">New</badge>
+            </small>
+        </span></h1>
+    </p>
+    <section>
+        <h2 class="display-5">Button Group
+            <button class="btn rounded-3 btn-primary">Badge->
+                <span class="badge rounded-pill bg-light text-dark">4</span>
+            </button>
+        </h2>
+        Group a series of buttons together on a single line or stack them in a vertical column.
+        <br>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique recusandae, labore aliquid, molestiae ipsum
+        beatae vitae sit fuga fugiat velit nisi saepe qui deserunt repudiandae quia dolorem possimus a odit?
+    </section>
+
+    <p>
+    <h3>Buttons without grouping!!</h3>
+    <div class="btn btn-outline-info">one</div>
+    <div class="btn btn-outline-info">two</div>
+    <div class="btn btn-outline-info">three</div>
+    </p>
+    <p>
+    <h3>Buttons using Grouping!!</h3>
+    <div class="btn-group" role="group">
+        <button class="btn btn-primary">first</button>
+        <button class="btn btn-primary">mid</button>
+        <button class="btn btn-primary">last</button>
+    </div>
+    </p>
+    <p>
+    <h3>Check Boxes</h3>
+    <div class="btn-group" role="group">
+
+        <input type="checkbox" class="btn-check" id="btncheck1">
+        <label for="btncheck1" class="btn btn-outline-primary">checkboxes</label>
+
+        <input type="checkbox" class="btn-check" id="btn2">
+        <label for="btn2" class="btn btn-outline-primary">checkboxes</label>
+
+        <input type="checkbox" class="btn-check" id="btn3">
+        <label for="btn3" class="btn btn-outline-primary">checkboxes</label>
+    </div>
+    </p>
+
+    <p>
+    <h3>Radio Buttons</h3>
+    <div class="btn-group-vertical" role="group">
+
+        <input type="radio" class="btn-check" name="btnradio" checked id="b1">
+        <label for="b1" class="btn btn-outline-primary">Radio 1</label>
+
+        <input type="radio" class="btn-check" name="btnradio" id="b2">
+        <label for="b2" class="btn btn-outline-primary">Radio 2</label>
+
+        <input type="radio" class="btn-check" name="btnradio" id="b3">
+        <label for="b3" class="btn btn-outline-primary">Radio 3</label>
+    </div>
+    </p>
+    <!-- <div class="alert alert-danger mb-0" role="alert">
+        <h4 class="alert-heading">ALERT!!</h4>
+        <p class="mb-0">This is <a href="nowhewe">link</a></p>
+        <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+    </div> -->
+    <p>
+    <h3>Dismissing</h3>
+    Using the alert JavaScript plugin, it’s possible to dismiss any alert inline. <br> Here’s how:
+    <ul>
+        <li>
+            Be sure you’ve loaded the alert plugin, or the compiled Bootstrap JavaScript.
+
+        </li>
+        <li>Add a close button and the .alert-dismissible class, which adds extra padding to the right of the alert and
+            positions the close button.</li>
+        <li>On the close button, add the data-bs-dismiss="alert" attribute, which triggers the JavaScript functionality.
+            Be
+            sure to use the button element with it for proper behavior across all devices.</li>
+    </ul>
+    </p>
+    <div class="alert bg-primary alert-dismissible fade show">
+        Click on the Cross to see JS working<button class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+    <!-- Below part will be covered afterwards with icon -->
+    <!-- <div class="alert alert-primary d-flex align-items-center" role="alert">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+            class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2" viewBox="0 0 16 16" role="img"
+            aria-label="Warning:">
+            <path
+                d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+        </svg>
+        <div>
+            An example alert with an icon
+        </div>
+    </div> -->
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+
+</html>

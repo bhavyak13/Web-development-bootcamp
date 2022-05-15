@@ -1,0 +1,20 @@
+#container div{
+    width: 600px;
+    height: 150px;
+}
+section{
+    width: 90%;
+    margin: 0 auto;
+    height: 500px;
+    background-color: #003566;
+    display: flex;
+    flex-direction: row;/*Direction of main axis!*/
+    flex-wrap: wrap;/*multiline krdega agr zrurat ho*/
+    align-items:center;/*Align flex itemms along cross axis*/
+    justify-content: flex-start;/*Main axis pe centre krra*/
+    align-content: center;
+/* Aligns a flex container’s lines within the flex container
+when there is extra space in the cross-axis, 
+similar to how 'justify-content'
+aligns individual items within the main-axis.*/
+}

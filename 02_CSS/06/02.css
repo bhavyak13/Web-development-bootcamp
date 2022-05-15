@@ -1,0 +1,37 @@
+h1{
+    letter-spacing: 10px ;
+    color: rgb(0,0,0);
+    text-align: left;
+    width: 50%;/*here block's width is set to 505 of its 
+    original width nd now if will do text allign = right
+    thn as width is 50% we will see the heading h1
+    at the end of the elemet/block[conatianer[ in which
+    it is contained but it will be visible in the centre as 
+    width of the container is reduced!!
+    conclusion is that : Text-allign works within container 
+    nd not according to the webpage!!
+    it will be better visible if we apply the background color effect
+    simultaneously!!*/
+    /* background-color: turquoise; */
+    font-weight: 400;/*For h1 by default its weight is 700 i.e bold!*/
+    /*range: 100 to 900 
+    also there are keywords avialable such as:
+    400-normal
+    700-bold
+    also bolder is aldo avialable
+    */
+    /* text-decoration: wavy underline red; */
+    font-family:cursive;
+}
+p{
+    text-align:justify;
+    font-family: georgia,serif;
+}
+a{
+    text-decoration: none;
+    color:purple;
+    font-size: 17px;;
+}
+p{
+    line-height: 2;
+}

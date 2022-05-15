@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit</title>
+</head>
+<body>
+    <h1>Edit</h1>
+    username : <%= obj.username %>
+    <form action="/comments/<%=obj.id%>?_method=PATCH" method="post">
+        <label for="we">new comment : </label>
+        <!-- <input type="text" name="newComment" id="we"> -->
+        <div>
+            <textarea name="newComment" id="we" cols="30" rows="5"><%=obj.text%></textarea>
+        </div>
+        <button type="submit">Post</button>
+    </form>
+</body>
+</html>

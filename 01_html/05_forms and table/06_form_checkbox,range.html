@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaaa</title>
+</head>
+<!-- <style>
+    #amount{width="500px";}
+</style> -->
+<body>
+
+    <form action="anywhere.com">
+
+        <h1>Pizzaaa</h1>
+
+        <p>
+            <img src="https://static.toiimg.com/photo/51089680.cms" width="200" alt="pizza's pic">
+        </p>
+
+        <p>
+            <label for="name">Your name: </label>
+            <input type="text" id="name" name="name" placeholder="Enter your name here">
+        </p>
+
+        <p>
+            <label for="amount">Number of Pizza's:</label>
+            <input type="number" placeholder="Number of pizza's" id="amount" name="amount" min="0" step="1" >
+        </p>
+
+        <hr>
+
+        <h2>What do you wanna add to it?</h2>
+
+        <section>
+            <p>
+                <input type="checkbox" name="cheese" id="chessesy" checked>
+                <label for="chessesy">Cheese</label>
+            </p>
+            <p>
+                <input type="checkbox" name="corn" id="corn">
+                <label for="corn">Golden Corn</label>
+            </p>
+
+            <p>
+                <input type="checkbox" id="ingridient2" name="onion">
+                <label for="ingridient2">Onion</label>
+            </p>
+
+            <p>
+                <input type="checkbox" id="ingridient3" name="tomato">
+                <label for="ingridient3">Tomato</label>
+            </p>
+            <p>
+                <input type="checkbox" name="Extra_cheesy" id="extra_cheese">
+                <label for="extra_cheese">Extra Cheese</label>
+            </p>
+        </section>
+
+        <p>
+            <label for="chesse_lub">Amount of Extra cheese</label>
+            <input type="range" id="chesse_lub" name="cheese_amount" max="100" min="10" step="2">
+        </p>
+
+        <hr>
+
+
+        <section>
+
+            <h3>Offer!!</h3>
+            <h4>You can add any of these as free from BB's hut!!</h4>
+
+            <p>
+                <input type="radio" name="extrass" id="extra1" value="GC">
+                <label for="extra1">Golden Corn</label>
+            </p>
+
+            <p>
+                <input type="radio" id="extra2" name="extrass" value="Oni">
+                <label for="extra2">Onion</label>
+            </p>
+
+            <p>
+                <input type="radio" id="extra3" name="extrass" value="Tom">
+                <label for="extra3">Tomato</label>
+            </p>
+
+        </section>
+
+        <hr>
+
+
+        <section>
+
+            <label for="desination">Choose Manufacturing Centre:</label>
+
+            <select name="place" id="desination">
+                <option value="KN">Krishna nagar</option>
+                <option value="Rm">Ram Nagar</option>
+                <option value="Se">South ex</option>
+                <option value="Mp">Maujpur</option>
+                <option value="" selected>--Please Select Centre--</option>
+            </select>
+
+        </section>
+
+        <section>
+            <label for="com">Any Reviews:</label>
+            <textarea name="commentss" id="com" cols="9" rows="1"></textarea>
+            <!-- we can also add plcaeholders in it!! -->
+        </section>
+
+        <p>
+            <button>Submit</button>
+            <button type="reset">Reset</button>
+        </p>
+    </form>
+
+</body>
+
+</html>

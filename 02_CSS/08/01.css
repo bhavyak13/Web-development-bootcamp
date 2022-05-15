@@ -1,0 +1,85 @@
+body{
+    background-color: #000;
+}
+h1{
+    background-color: burlywood;
+    font-family: sans-serif;
+    width: 25%;
+    height: 40px;
+    margin-bottom: 40px;
+}
+div{
+    background-color: cadetblue;
+    color: #fdd;
+    width: 50%;
+    height:unset;
+    text-align: justify;
+    font-family: cursive;
+    padding:10px 20px 30px 40px;/*top right bottom left(just like a clock!!*/
+    margin-bottom: 30px;
+}
+h1+div{
+    border-color: hotpink;
+    border-style:solid;
+    border-width: 5px;
+    box-sizing: border-box;/*makes border 
+    included in the specified size of the box!!*/
+    border-right-width: 10px;
+}
+#two{
+    background-color: teal;
+    border-color: burlywood;
+    border-width: 7px;
+    border-style: inset;
+    box-sizing: border-box;
+    border-bottom-style:double;
+    border-bottom-width: 9px;
+}
+#three{
+    background-color:darkslategrey;
+    /* border-color: firebrick;
+    border-width: 7px;
+    border-style: ridge; */
+    border: firebrick 7px ridge;/*above three lines
+     combined in  one :)*/
+    box-sizing: border-box;
+    border-left-color: gold;
+}
+div:hover{
+    border-color: lawngreen !important;
+    background-color:inherit !important;
+    border-width: 5px;
+}
+::selection{
+    color: indianred;
+    background-color: khaki;
+}
+
+
+
+
+/* Padding is the space between the actual content box 
+   and the border of an element  */
+button{
+    border-radius: 20px;
+    border-color: lawngreen;
+    /* padding: 0.2cm; */
+    padding: 5px 20px;
+    background-color:olivedrab;
+}
+button:hover{
+    background-color: #000;
+    color: white;
+}
+/* Padding is a space between wlwmwnt content area or content box 
+and its own border like a layer of fat between your body and muscle!!
+ */
+
+
+
+
+
+/* MARGIN
+unlike padding(it is spacing inside border)
+where as margin is spacing outside border (btween that elemnt nd something else)!! */
+

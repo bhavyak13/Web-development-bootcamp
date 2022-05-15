@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit</title>
+</head>
+
+<body>
+    <form action="/products/<%= obj._id %>?_method=PATCH" method="post">
+        <%= obj._id %>
+        <div>
+            <label for="id1">Name : </label>
+            <textarea name="name" id="id1" cols="15" rows="1"> <%= obj.name %> </textarea>
+        </div>
+        <div>
+            <label for="id2">Price : </label>
+            <input type="number" name="price" id="id2" value="<%= obj.price %>" min="0">
+        </div>
+        <div>
+            <label for="id3">Category : </label>
+            <select name="category" id="id3">
+
+                <% for(let category of categories){ %>
+                    <option value="<%= category %>" <%= obj.category===category? 'selected':'' %>><%= category %></option>
+                <% } %>
+
+
+
+
+                <!-- <% if(obj.category==='vegetable'){ %> 
+                    <option value="vegetable" selected>vege</option>
+                <% }else{ %>
+                    <option value="vegetable">vege</option>
+                <% } %>
+                
+                <% if(obj.category==='fruit'){ %> 
+                    <option value="fruit" selected>fruit</option>
+                <% }else{ %>
+                    <option value="fruit">fruit</option>
+                <% } %>
+
+                <% if(obj.category==='dairy'){ %> 
+                    <option value="dairy" selected>dairy</option>
+                <% }else{ %>
+                    <option value="dairy">dairy</option>
+                <% } %> -->
+            </select>
+        </div>
+        <button type="submit">DONE</button>
+    </form>
+    <a href="/products/<%= obj._id %> ">Cancel</a>
+</body>
+
+</html>

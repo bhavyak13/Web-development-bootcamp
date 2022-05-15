@@ -1,0 +1,11 @@
+<%- include('partials/header') %>
+<%- include('partials/navbar') %>
+<h1>Hello</h1>
+<ul>
+    <%for(let name of arr){%>
+        <li>
+            <%=`${name}`%>
+        </li>
+        <%}%>
+    </ul>
+<%- include('partials/footer') %>

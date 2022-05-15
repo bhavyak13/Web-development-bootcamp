@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="app.css">
+</head>
+<!-- 
+    TYPOGRAPHY:
+    heading(class->h1,h2...)
+    * small tag
+    text muted
+    display
+    lead
+    mark
+    TEXT UTILITIES:
+    abbreviations and title
+    * blockquote tag
+    blockquote(p.s. this is class)
+    alignment(ex centering the text!)
+
+ -->
+<body class="container-md text-light">
+
+    <h1 class="display-2 text-center">Bootstrap Intro</h1>
+    <h2 class="display-5 ">Buttons!!</h2>
+    <p>
+        <button type="button" class="btn btn-outline-primary" disabled>Primary</button>
+        <button type="button" class="btn btn-secondary">secondary</button>
+        <button type="button" class="btn btn-outline-success ">secondary</button>
+        <button type="button" class="btn btn-outline-danger btn-sm">secondary</button>
+        <button type="button" class="btn btn-warning btn-lg">sadasry</button>
+        <button type="button" class="btn btn-outline-info">sdary</button>
+        <button type="button" class="btn btn-light">sec</button>
+        <button type="button" class="btn btn-link">jilasas</button>
+    </p>
+    <h2 class="display-5 ">About Contaniners:</h2>
+    <p>
+        <span class="lead text-info"> Containers are a fundamental building block of Bootstrap that contain, pad, and align your content within a
+        given device or viewport.</span>
+        ...... Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, nemo tempore maxime assumenda minima,
+        fugit porro nostrum, blanditiis aliquam autem saepe eaque? Ad voluptate quisquam expedita aperiam cumque
+        magni
+        officia!Ducimus quasi exercitationem cupiditate, voluptas, sunt, incidunt nisi alias quidem atque assumenda
+        consequuntur id saepe velit iure! Voluptate, expedita ad nisi distinctio eum quidem quod saepe
+        exercitationem
+        repellat officiis aperiam.
+    </p>
+
+    <section>
+        <span><abbr title="Bootstrap">BS</abbr></span> comes with <mark>three</mark> different containers:
+        <span class="yo"><lead class="display-6 text-info">Unstyled List : </lead></span>
+        <!-- <span class="yo"><lead class="display-6 bg-primary text-light bg-gradient">Unstyled List : </lead></span> -->
+        <ul class="list-unstyled">
+            <li>
+                .container, which sets a max-width at each responsive breakpoint
+            </li>
+            <li>
+                .container-fluid, which is width: 100% at all breakpoints
+            </li>
+            <li>
+                .container-{breakpoint}, which is width: 100% until the specified breakpoint
+            </li>
+        </ul>
+    </section>
+
+    <section class="">
+        <h2 class="display-4 border border-info rounded-0" >
+            Main heading
+            <small class="text-muted">with faded secondary text</small>
+        </h2>
+        <p>
+            <blackquote class="blockquote">This is a quote within blockquote element!!</blackquote>
+            <footer class="blockquote-footer">Bhavya &#58;&#41;</footer>
+        </p>
+    </section>
+
+
+</body>
+
+</html>

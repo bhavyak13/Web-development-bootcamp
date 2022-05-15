@@ -1,0 +1,14 @@
+<%- include('partials/header') %>
+<%- include('partials/navbar') %>
+<body>
+    <h1>
+        <%= `Here's your random number : ${num}`%>
+    </h1>
+    <p>
+        <% if(num%2===0){%>
+            Even bolte!!
+            <% }else{%>
+                Odd hai vai!
+                <% }%>
+    </p>
+<%-include('partials/footer')%>>

@@ -1,0 +1,14 @@
+body{
+    background-color: black;
+    color: #fff;
+}
+h1{/*Block level element*/
+    background-color: coral;
+    border: magenta 3px solid;
+    display: inline;/*Changes the element to inline element*/
+}
+span{/*Inline element*/
+    background-color: midnightblue;
+    border: magenta 3px solid;
+    display: block;/*Changes the element to block level element*/
+}

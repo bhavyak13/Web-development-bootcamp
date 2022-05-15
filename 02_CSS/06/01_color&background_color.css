@@ -1,0 +1,18 @@
+h2{
+    color: magenta;
+}
+button{
+    color: green;
+    background-color: hotpink;
+}
+p{
+    color: darkblue;
+    background-color: rgb(0, 190, 95);
+}
+body{
+    /* different ways of setting a background color!! */
+    /* background-color: black; */
+    /* background-color: #000000; */
+    /* background-color: #000;*/
+    background-color: rgb(0,0,0);
+}

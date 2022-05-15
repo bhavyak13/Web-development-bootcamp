@@ -1,0 +1,28 @@
+<%- include('partials/header') %>
+<%- include('partials/navbar') %>
+    <div class="contanier">
+        <h1>
+            <%= obj.name %>
+        </h1>
+        <h2>
+            <%=obj.description%>
+        </h2>
+        <p>
+            subscribers: <%=obj.subscribers%>
+        </p>
+        <hr>
+        <p>
+            <% for(let i of obj.posts){ %>
+                <article>
+                    <%= i.title %> -
+                        <b>
+                            <%= i.author%>
+                        </b>
+                        <%if(i.img){ %>
+                            <img src=<%=`${i.img}`%>>
+                            <%} %>
+                                <% } %>
+                </article>
+        </p>
+    </div>
+    <%- include('partials/footer') %>

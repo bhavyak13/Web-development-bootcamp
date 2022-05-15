@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form with</title>
+</head>
+
+<body>
+    <h1>Forms demo!!</h1>
+    <form action="http://www.codeforces.com">
+
+        <p>
+            <label for="Username"><b>Username: </b> </label>
+            <input id="Username" type="text" placeholder="Enter your username here" name="u_name">
+        </p>
+        <!-- <br> -->
+
+        <p>
+            <label for="Pass"><b> Password: </b></label>
+            <input id="Pass" type="password" placeholder="Enter your password" name="pass">
+        </p>
+        <!-- <br> -->
+        <p>
+            <label for="yeah"><b>Choose Color: </b></label>
+            <input type="color" id="yeah" name="colorss">
+        </p>
+        <!-- <p>
+            <input type="range" id="vol" min="10" max="120" name="volume_">
+            <label for="vol">Volume</label>
+        </p> -->
+
+        <p>
+            <label for="num"><b>Phone Number: </b></label>
+            <input id="num" type="number" placeholder="Your number" name="Mobilva">
+        </p>
+        <!--Buttons!!-->
+        <p>
+            <input type="checkbox" name="tos" id="agrees?" checked>
+            <label for="agrees?">I Agreed to the terms and services</label>
+            <br>
+            <a href="teerms.com">Terms and Services</a>
+        </p>
+        <!-- by default every button included in the form submits
+            the form. To make it behave like a normal button we have to 
+            speficy its type as button  -->
+        <div>
+            <button>Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+
+        <p>
+            <button type="button">Do not submit</button>
+        </p>
+
+    </form>
+
+    <section>
+        <!-- unlike buttons declared in between form tag  
+        if a button is declared outside form tag then its default 
+        type would not be of submit!!
+        for example: -->
+        <button type="button">This is declared outside the form!!</button>
+    </section>
+
+</body>
+
+</html>

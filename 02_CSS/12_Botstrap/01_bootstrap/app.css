@@ -1,0 +1,15 @@
+.container-fluid{
+    text-align: justify;
+}
+body{
+    background-color: black;
+}
+h2{
+    color: chartreuse;
+}
+h1{
+    color:crimson;
+}
+.yo{
+    display: block;
+}

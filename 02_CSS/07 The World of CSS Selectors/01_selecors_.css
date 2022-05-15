@@ -1,0 +1,260 @@
+universal selector
+/* *{
+    color:pink;
+} */
+
+
+
+
+
+/* element selector */
+/* we can use comma to select more than one item 
+for changing.editing */
+body{
+    background-color: #f1faee;
+}
+
+h1,h2{
+    color: #1d3557;
+}
+button{
+    background-color: #a8dadc;
+}
+
+
+
+
+
+/* id selectors (uses # symbol) */
+#signup{
+    background-color: #1d3557;
+    color: #f1faee;
+}
+span{/*selects all the spans*/
+    color:#457bd9;
+}
+/* Class Selectors using dot operator!! */
+.tag{
+    background-color:#e63946;
+    color: #f1faee;
+    font-size: 20px;
+}
+
+
+
+
+
+
+/* desendent selecors */
+/* comma -> and
+space -> nesting second elemnt (i.e. li<space>a means a inside li ) */
+.post span a{/*this means anchor tags iinside span*/
+    text-decoration: none;
+    color: #457bd9;
+    font-weight: 700;
+}
+footer a{ /* -> 1*/
+    color:#e63946;
+}
+
+
+
+
+
+
+/* Direct child selector!!
+this will select all elemts only one level down!! 
+operator: >
+*/
+footer > a{ /* -> 2*/
+    color: black;
+}
+
+/* Notice 1 and 2 
+1 is covering all nested anchor tags inside footer atg
+but 2 is covering all anchor tags that are directly the child of footer
+or directly descnded by footer!! */
+
+/* adjacent Selectors
+elemts that come one after another */
+h2 + button{/*It is applied on every button thst comes right after h2*/
+    background-color:magenta;
+}
+
+
+
+
+
+/* Attribute Selector!! */
+/* Selects all input elements where type attribute is 
+aet to text
+we use the square rackets and then inside 
+attribute name = something.. */
+input[type="text"]{
+    color: chocolate;
+}
+footer > button{
+    background-color: cornflowerblue;
+    color: #fff;
+}
+main > p{
+    text-align: justify;
+}
+
+
+
+
+
+
+
+
+/* pseudo Class
+Keywords added to selectors that specifies a special state of that 
+selected element(s) */
+.post button:hover{
+    background-color: crimson;
+    color: white;
+}
+
+
+span a:hover{
+   text-decoration: underline black;
+}
+
+
+nav a:active{
+    background-color: lightgreen;
+}
+
+
+.post button:active{
+    background-color: lime;
+}
+
+
+/* .post:nth-of-type(2n){
+    background-color: grey;
+} */
+
+
+.post:hover{
+    background-color: #fef;
+}
+
+
+
+
+
+
+
+/* Pseudo Elemnts
+-> lets you style a particular part of the element */
+
+*::first-letter::selection{
+    background-color: black;
+}
+
+*::first-letter{
+    text-transform: uppercase;
+}
+
+h2::first-letter{
+    font-size: 30px;
+}
+
+main > p::first-line{
+    color: purple;
+}
+
+
+
+main > p::selection{
+    background-color: royalblue;
+}
+
+/* this applies for the whole document */
+*::selection{
+    background-color: yellowgreen;
+}
+
+/* Those are exapmles of Seudo Elements 
+who were selecting particular pieces ,
+these are actual things on the page rather than
+pseudo classes which are states
+
+something is being covered or active or checked 
+pseudo elemnts are things or parts of an element!!*/
+
+
+
+
+
+
+
+
+/* Cascading */
+/* Order in which the style are written actually matters*/
+/* cascades going down starting at the top of our styles 
+all the way to bottom!! */
+h2{
+    color: coral;
+}
+h2{
+    color: olivedrab;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Specificity
+__ Id selectors 
+__ Class, Attribute, & Pseudo-Class Selectors
+__ Element and Pseudo-Element Selectors!! 
+
+example1;
+section p{
+    color: teal;
+}
+here score is : 0   0        2
+               id  class    selector
+               =2;
+               
+               
+example2;
+#ideaop{
+    color:navy;
+}
+ 
+here score is : 1   0        0
+               id  class    selector
+               =100;
+
+therefore score of example 2 >> example 1
+hence styles will be applied as written inside example 2 !!
+
+
+
+In short 
+Id > Class > Element :)
+
+*/
+
+/* Inline styles (i.e. styles wriiten in html
+file) are the most specific !!
+though They are valid orm of styling elements but 
+its recommended to not use the inline style selectors
+& if it used thn it would the most specific !! */
+
+
+/* 
+Note: When !important rule is used on any style declaration,
+      then this declaration would overrides any other 
+      declarations!!
+*/

@@ -1,0 +1,108 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-size: 6em;
+    text-align: center;
+}
+nav {
+    font-size: 1.5em;
+}
+
+ul,li {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+
+
+/* @media (max-width: 1600px){ */
+    /*Range: 0 to 1200*/
+    /* h1{
+        color: magenta;
+    }
+} */
+/* @media (max-width: 800px){ */
+    /*Range: 0 to 800*/
+    /* h1{ */
+        /* color: crimson; */
+    /* } */
+/* } */
+/* @media (max-width: 500px){ */
+    /*Range: 0 to 500*/
+    /* h1{ */
+        /* color:lightgreen; */
+    /* } */
+/* } */
+
+
+
+
+
+/* OR */
+
+
+
+/* Remember CSS doc is read from top to bottom */
+h1{
+    /* range: ALL */
+    color: lightgreen;
+}
+@media (min-width: 500px){
+    /* Range: >500 */
+    h1{
+        color:crimson;
+    }
+}
+@media (min-width: 800px){
+    /* range: > 800 */
+    h1{
+        color: magenta;
+    }
+}
+@media (min-width: 1200px){
+    /* Range: >1200px */
+    h1{
+        color: midnightblue;
+    }
+}
+
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+ul{
+    /* border: red solid 2px; */
+    flex-grow: 1;
+    max-width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+@media(max-width:768px){
+    h1{
+        font-size: 5em;
+    }
+    ul{
+    flex-direction: column;       
+    align-items: center;
+    }
+}
+@media(max-width: 576px){
+    h1{
+        font-size: 4em;
+    }
+    nav{
+        flex-direction: column;
+        align-items: center;
+    }
+}

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body class=" container bg-dark text-light">
+    <h1 class="display-1 text-center">Bootstrap Grid</h1>
+    <p>
+        <span class="lead text-info display-4">Grid system</span>
+    <ul class="list-unstyled">
+        <li>
+            Use our powerful mobile-first flexbox grid to build layouts of all shapes and sizes thanks to a twelve
+            column
+            system, six default responsive tiers, Sass variables and mixins, and dozens of predefined classes.
+        </li>
+        <li>
+            Bootstrap’s grid system uses a series of containers, rows, and columns to layout and align content. It’s
+            built with flexbox and is fully responsive.
+        </li>
+    </ul>
+    </p>
+    <div class="container">
+        <div class="row mt-3 mb-2">
+            <div class="col-4 bg-info">1</div>
+            <div class="col-1 bg-danger">2</div>
+            <div class="col-7 bg-warning">3</div>
+        </div>
+    </div>
+    <hr class="mt-4">
+    <section>
+        <h2 class="display-4 text-info">
+            Auto-layout columns
+        </h2>
+        <h3 class="display-5 text-danger">
+            Equal-width
+        </h3>
+        <div class="container">
+            <div class="row">
+                <div class="col bg-primary">1</div>
+                <div class="col bg-warning">2</div>
+                <div class="col bg-danger text-center">3</div>
+            </div>
+        </div>
+        <h3 class="text-danger display-5">Setting one column width</h3>
+        <div class="container">
+            <div class="row">
+                <div class="col-8 bg-success">1</div>
+                <div class="col bg-primary">2</div>
+                <div class="col bg-info text-center">3</div>
+            </div>
+        </div>
+
+    </section>
+    <section>
+        <h2 class="text-info display-5">Responsive Grid!!</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-xl bg-primary">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae culpa aliquid expedita
+                    corporis placeat, fugit harum laboriosam tempore. Necessitatibus commodi, dicta eos quos nihil
+                    quam repellendus reprehenderit non sit quidem.
+                </div>
+                <div class="col-md-6 col-xl bg-info">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus reprehenderit molestiae
+                    doloremque ab cum. Incidunt dolorum, modi magnam sapiente quis velit placeat, minima laboriosam
+                    necessitatibus similique non error ullam eos!
+                </div>
+                <div class="col-md-6 col-xl bg-success">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam asperiores magni, nihil neque
+                    commodi officiis culpa expedita quia cum illum ipsam consequatur animi quod error perspiciatis
+                    porro aspernatur, laboriosam ad?
+                </div>
+                <div class="col-md-6 col-xl bg-warning">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam asperiores magni, nihil neque
+                    commodi officiis culpa expedita quia cum illum ipsam consequatur animi quod error perspiciatis
+                    porro aspernatur, laboriosam ad?
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container">
+        <h2 class="display-5 text-info">Grid Utilities</h2>
+        <h3 class="display-6 text-success">Vertical Alignment!!</h3>
+        <div class="row align-items-center">
+            <div class="col bg-primary align-self-start">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda asperiores amet
+                alias architecto magni ea qui nulla earum exercitationem, non similique aliquam neque libero aperiam
+                impedit sit totam debitis fugiat.
+            </div>
+            <div class="col bg-warning">
+                Columns build on the grid’s flexbox architecture. Flexbox means we have options for changing individual
+                columns and modifying groups of columns at the row level. You choose how columns grow, shrink, or
+                otherwise change.
+                When building grid layouts, all content goes in columns. The hierarchy of Bootstrap’s grid goes from
+                container to row to column to your content. On rare occasions, you may combine content and column, but
+                be aware there can be unintended consequences.
+                Bootstrap includes predefined classes for creating fast, responsive layouts. With six breakpoints and a
+                dozen columns at each grid tier, we have dozens of classes already built for you to create your desired
+                layouts. This can be disabled via Sass if you wish.
+            </div>
+            <div class="col bg-info">
+                Learn how to modify columns with a handful of options for alignment, ordering, and offsetting thanks to
+                our flexbox grid system. Plus, see how to use column classes to manage widths of non-grid elements.
+            </div>
+            <div class="col bg-danger align-self-end">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, deleniti. Incidunt ullam a eaque
+                dolore nobis sint adipisci, omnis iste, illo corporis nisi illum cumque maiores provident soluta libero
+                officiis?
+            </div>
+            <h3 class="display-6 text-success m-2">Horizontal Alignment!!</h3>
+            <div class="row justify-content-end mt-2">
+                <div class="col-4 bg-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nihil eveniet
+                    repellat, similique ratione molestiae earum delectus vel voluptatum magnam eaque. Rem magnam aut
+                    voluptates! Ipsum beatae mollitia doloribus fugiat.</div>
+                <div class="col-4 bg-warning">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam harum et
+                    aut soluta, rem omnis, repellendus velit dolor, vel tempora nostrum corrupti ullam nobis. Quia dicta
+                    rem ut a consectetur!</div>
+            </div>
+            <div class="row justify-content-between m-3">
+                <div class="col-2 bg-danger text-dark">n</div>
+                <div class="col-3 bg-light text-dark">n</div>
+            </div>
+            <div class="row justify-content-around">
+                <div class="col-4 bg-info">n</div>
+                <div class="col-4 bg-warning">n</div>
+            </div>
+            <div class="row mt-4 align-items-center">
+                <div class="col bg-primary align-self-end">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Magni dolorum dicta
+                    voluptate, voluptatum molestias aperiam impedit magnam dolores sapiente ipsam repellendus
+                    consectetur ea quia
+                    officiis quam cumque commodi cum quaerat!</div>
+                <div class="col-12 col-md-6 col-lg-6 bg-danger">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam consectetur dolores ipsam quam
+                    obcaecati sed ipsum, quod et delectus maiores. Ea id dolores ratione maxime enim, praesentium nobis
+                    magnam voluptates.
+                </div>
+                <div class="col-3 bg-light align-self-end text-dark">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur molestiae esse cupiditate,
+                    vero veniam ea dolor adipisci! Ullam eius eligendi, consectetur illum impedit nisi? Possimus neque
+                    eum reiciendis eligendi beatae.
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h3 class="text-danger display-5 mt-3">Responsive Images!!</h3>
+        <h4 class="display-6 text-success">Images</h4>
+        <p>
+            Documentation and examples for opting images into responsive behavior (so they never become larger than
+            their parent elements) and add lightweight styles to them—all via classes.
+        </p>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg col-md-6">
+                    <img class="img-fluid"
+                        src=https://images.unsplash.com/photo-1548003411-73cb4c666bb9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MjN8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=400&q=60"
+                        class="rounded mx-auto d-block">
+                </div>
+                <div class="col-lg col-md-6">
+                    <img class="img-fluid"
+                        src="https://images.unsplash.com/photo-1548020751-bd94af3f1b66?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTl8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=400&q=60"
+                        class="rounded mx-auto d-block">
+                </div>
+                <div class="col-lg col-md-6">
+                    <img class="img-fluid"
+                        src="https://images.unsplash.com/photo-1547291209-66df014937ed?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MzN8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=400&q=60"
+                        class="rounded mx-auto d-block">
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

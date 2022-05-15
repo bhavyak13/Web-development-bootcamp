@@ -1,0 +1,37 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+h1 {
+    text-align: center;
+}
+#container {
+    background-color: #003049;
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    border: 5px solid #76ff90;
+
+    display:flex;
+
+    flex-direction: column;/* Default flex direrction is of row!! */
+
+
+    justify-content: center ;/* MAIN axes prop!! */
+
+
+    flex-wrap: wrap;
+    /* Flex Wrap also cahnges the direction of Cross Axis!! */
+    /*flex-wrap sets whether the flex items are forced onto*/
+    /* One line or can wrap onto multiple lines!! */
+
+    
+    align-items: center;
+    /*Default: Flex-start *//*CROSS axes Prop!!*/
+    align-content:center;
+    
+}
+#container div{
+    width: 150px;
+    height: 150px;
+
+}
